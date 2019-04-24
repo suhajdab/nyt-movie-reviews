@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import logo from "./logo.svg";
 
 // from https://github.com/mdbootstrap/React-Bootstrap-with-Material-Design
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -11,7 +12,7 @@ class Navigation extends Component {
         return (
             <MDBNavbar color="default-color" dark expand="md">
                 <MDBNavbarBrand>
-                    <img src="/logo.svg" alt=""/>
+                    <img src={logo} alt="movie reviews logo"/>
                     <strong className="white-text">New York Times movie reviews</strong>
                 </MDBNavbarBrand>
                 <MDBNavbarNav right>
