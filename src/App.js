@@ -49,8 +49,8 @@ class App extends Component {
     .catch(this.handleError);
   };
 
-  handleInput = value => {
-    value = value.trim();
+  handleInput = event => {
+    const value = event.target.value.trim();
 
     this.setState({
       search_query: value,
